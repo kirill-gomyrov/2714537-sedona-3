@@ -2,7 +2,7 @@
 
 * Студент: [Кирилл Гомыров](https://up.htmlacademy.ru/htmlcss-individual/3/user/2714537).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
-
+* Сайт: [Мой проект](https://kirill-gomyrov.github.io/2714537-sedona-3/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
