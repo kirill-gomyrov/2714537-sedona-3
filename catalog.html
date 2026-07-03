@@ -149,6 +149,32 @@
       </form>
     </section>
 
+    <!-- Результаты поиска -->
+    <section class="catalog-results">
+      <h2 class="visually-hidden">Список найденных гостиниц</h2>
+      <div class="catalog-results-toolbar">
+        <p class="catalog-results-count">Найдено гостиниц: 38</p>
+        <div class="catalog-sorting">
+          <label for="catalog-sorting-select" class="visually-hidden">Сортировка гостиниц</label>
+          <select name="sorting" class="catalog-sorting-select" id="catalog-sorting-select">
+            <option value="price-asc">Сначала дешёвые</option>
+            <option value="price-desc">Сначала дорогие</option>
+            <option value="rating-desc">Сначала с высоким рейтингом</option>
+          </select>
+        </div>
+        <div class="catalog-view" role="group" aria-label="Переключение вида каталога">
+          <button type="button" class="catalog-view-button catalog-view-button-grid catalog-view-button-current" aria-pressed="true">
+            <span class="visually-hidden">Показать карточки плиткой</span>
+          </button>
+          <button type="button" class="catalog-view-button catalog-view-button-card" aria-pressed="false">
+            <span class="visually-hidden">Показать карточки по одной</span>
+          </button>
+          <button type="button" class="catalog-view-button catalog-view-button-list" aria-pressed="false">
+            <span class="visually-hidden">Показать список</span>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
