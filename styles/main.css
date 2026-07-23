@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  font-display: swap;
+}
+
+/* Общие стили */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header,
+.page-main,
+.page-footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus-visible {
+  background-color: #615048;
+  outline: 3px solid #83b3d3;
+  outline-offset: 1px;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+/* Шапка сайта */
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  width: 1060px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.navigation-logo-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 140px;
+  height: 70px;
+  margin-right: 28px;
+  flex-shrink: 0;
+}
+
+.navigation-logo-link img {
+  display: block;
+  width: 140px;
+  height: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-link {
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-user-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user-link {
+  position: relative;
+  display: block;
+  min-width: 44px;
+  min-height: 64px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-user-link-search {
+  background-image: url("../images/search-icon.svg");
+}
+
+.navigation-user-link-favorites {
+  background-image: url("../images/heart-icon.svg");
+}
+
+.navigation-favorites-count {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4px;
+  font-size: 10px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
+.navigation-user-button {
+  width: 160px;
+  margin-left: 20px;
+  padding: 8px 34px;
+}
+
+/* Главный экран */
+.page-hero {
+  min-height: 485px;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  text-align: center;
+  background-color: #82b3d3;
+  background-image: url("../images/hero-divider.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center;
+  background-size: 100% auto, cover;
+}
+
+.page-hero-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Преимущества */
+.advantages {
+  text-align: center;
+}
+
+.advantages-lead {
+  width: 620px;
+  margin: 0 auto 25px;
+  padding-top: 69px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  width: 651px;
+  margin: 0 auto 90px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+  text-align: center;
+}
+
+.advantages-item-featured {
+  display: flex;
+  width: 1200px;
+  height: 385px;
+  padding: 0;
+}
+
+.advantages-item-featured-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 385px;
+  padding: 102px 85px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.advantages-item-light {
+  padding: 112.5px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-medium {
+  padding: 112.5px 85px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-dark {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-item-title {
+  width: 175px;
+  margin: 0 auto 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 30px auto 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-dark .advantages-item-title {
+  color: #ffffff;
+}
+
+.advantages-item-dark .advantages-item-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-item-description {
+  width: 230px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-image {
+  display: block;
+  width: 800px;
+  height: 385px;
+  object-fit: cover;
+}
