@@ -418,3 +418,213 @@ img {
   line-height: 21px;
   color: #333333;
 }
+
+/* Поиск гостиницы */
+.hotel-search {
+  padding: 96px 304px;
+  text-align: center;
+}
+
+.hotel-search-lead {
+  margin: 0 0 20px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-search-description {
+  width: 592px;
+  margin: 0 auto 54px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.hotel-search-button {
+  width: 376px;
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Подписка на рассылку */
+.newsletter {
+  padding: 96px 258px 104px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #82b3d3;
+  background-image: url("../images/newsletter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.newsletter-lead {
+  margin: 0 0 20px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  width: 475px;
+  margin: 0 auto 54px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+}
+
+.newsletter-field {
+  width: 452px;
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-field::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.newsletter-field:hover {
+  background-color: #e6e6e6;
+}
+
+.newsletter-field:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  outline-offset: 0;
+}
+
+.newsletter-button {
+  width: 232px;
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+  border-radius: 0 4px 4px 0;
+}
+
+.newsletter-button:hover {
+  background-color: #68a2ca;
+}
+
+.newsletter-button:focus-visible {
+  background-color: #68a2ca;
+  outline: 2px solid #82b3d3;
+  outline-offset: 2px;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+/* Подвал сайта */
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.footer-social-icon {
+  display: block;
+}
+
+.footer-social-link:hover .footer-social-icon {
+  opacity: 0.6;
+}
+
+.footer-social-link:focus-visible {
+  outline: 2px solid #82b3d3;
+  outline-offset: 2px;
+}
+
+.footer-social-link:active .footer-social-icon {
+  opacity: 0.3;
+}
+
+.footer-contacts {
+  width: 720px;
+  font-style: normal;
+  text-align: center;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus-visible {
+  color: #756157;
+  outline: 2px solid #82b3d3;
+  outline-offset: 2px;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-developer-link {
+  display: block;
+  width: 115px;
+}
+
+.footer-developer-logo {
+  display: block;
+}
+
+.footer-developer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-developer-link:focus-visible {
+  outline: 2px solid #82b3d3;
+  outline-offset: 2px;
+}
+
+.footer-developer-link:active {
+  opacity: 0.3;
+}
