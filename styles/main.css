@@ -628,3 +628,367 @@ img {
 .footer-developer-link:active {
   opacity: 0.3;
 }
+
+/* Каталог: верхний блок с фильтром */
+.catalog-hero {
+  padding: 35px 70px 70px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url("../images/catalog-filter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.catalog-title {
+  margin: 0 0 8px;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 28px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  width: 8px;
+  height: 11px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-link {
+  display: block;
+  min-width: 13px;
+  min-height: 15px;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+  background-image: url("../images/breadcrumbs-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 15px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+/* Фильтр каталога */
+.catalog-filter {
+  display: flex;
+  align-items: flex-start;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group:nth-of-type(2) {
+  margin-right: 140px;
+}
+
+.catalog-filter-group-price {
+  width: 288px;
+}
+
+.catalog-filter-title {
+  margin-bottom: 32px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+/* Кастомные чекбоксы и радиокнопки */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.control-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.control-label::before {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.control-input[type="checkbox"] + .control-label::before {
+  border-radius: 4px;
+}
+
+.control-input[type="radio"] + .control-label::before {
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid #3f5e72;
+  border-bottom: 2px solid #3f5e72;
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"]:checked + .control-label::after {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus-visible + .control-label::before {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+/* Фильтр стоимости */
+.price-filter {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.price-filter-label {
+  position: relative;
+  display: block;
+  width: 143px;
+}
+
+.price-filter-label:first-child {
+  margin-right: 2px;
+}
+
+.price-filter-input {
+  width: 143px;
+  padding: 12px 45px 12px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.price-filter-input::-webkit-outer-spin-button,
+.price-filter-input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.price-filter-input[type="number"] {
+  appearance: textfield;
+}
+
+.price-filter-label:first-child .price-filter-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-filter-label:last-child .price-filter-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-filter-input:hover {
+  background-color: #e6e6e6;
+}
+
+.price-filter-input:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  outline-offset: 0;
+}
+
+.price-filter-text {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Диапазон стоимости */
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  left: 0;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  right: 0;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
+}
+
+/* Кнопки фильтра */
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  padding-top: 56px;
+}
+
+.catalog-filter-button {
+  width: 191px;
+  margin-bottom: 32px;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82b3d3;
+}
+
+.catalog-filter-button:hover {
+  background-color: #68a2ca;
+}
+
+.catalog-filter-button:focus-visible {
+  background-color: #68a2ca;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.catalog-filter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+.catalog-filter-reset {
+  width: 191px;
+  padding: 8px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.catalog-filter-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-reset:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.catalog-filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
